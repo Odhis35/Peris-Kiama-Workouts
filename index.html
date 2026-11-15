@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Her Fitness Week</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="welcome">
+        <p class="subtitle">A LITTLE FITNESS CORNER ♡</p>
+        <h1>Hey, Beautiful!</h1>
+        <p>
+            Welcome to your personal workout space.
+            The gym can wait, but your fitness journey
+            doesn't have to.
+        </p>
+        <p>Five days. A little effort. A lot of progress.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="day-selector">
+            <h2>Choose your day</h2>
+            <div id="days">
+                <button onclick="selectDay('Monday')">Mon</button>
+                <button onclick="selectDay('Tuesday')">Tue</button>
+                <button onclick="selectDay('Wednesday')">Wed</button>
+                <button onclick="selectDay('Thursday')">Thu</button>
+                <button onclick="selectDay('Friday')">Fri</button>
+            </div>
+        </section>
+
+        <section id="workout-section">
+            <h2 id="day-title">Monday's Workout</h2>
+            <div id="exercise-list"></div>
+        </section>
+
+        <section id="completion-message" hidden>
+            <h2>Look at you! 🎉</h2>
+            <p>You did it! Another day of showing up for yourself.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        Made with a little extra motivation ♡
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #faf6f2;
+    color: #443b37;
+    line-height: 1.6;
+}
+
+.welcome {
+    background: #eadbd5;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.subtitle {
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.welcome h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+    color: #75584f;
+}
+
+.welcome p {
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+.container {
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+.day-selector {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#days {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: #e7d3cb;
+    color: #443b37;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #c99f91;
+    color: white;
+}
+
+.exercise-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 18px 0;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.exercise-card img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 12px 0;
+}
+
+.done-btn {
+    background: #9c796d;
+    color: white;
+    margin-top: 15px;
+}
+
+.done-btn:disabled {
+    background: #a8b9a1;
+    cursor: default;
+}
+
+#completion-message {
+    background: #e5eee1;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #8b7770;
+    font-size: 13px;
+}
