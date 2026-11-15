@@ -14,32 +14,35 @@ const workouts = {
             sets: 3,
             reps: 20,
             rest: 45,
+            image: "Images/Bodyweightsquat.jpg",
         },
         {
             name: "Regular Lunges",
             sets: 3,
             reps: 10,
             rest: 45,
-            /*image: "images/wall-pushups.jpg"*/
+            image: "Images/Lunges.png",
         },
         {
             name: "Single-leg Deadlift",
             sets: 3,
             reps: 15,
             rest: 45,
-            /*image: "images/glute-bridges.jpg"*/
+            image: "Images/Singlelegdeadlift.jpg",
         },
         {
             name: "Calf-raise",
             sets: 3,
             reps: 20,
             rest: 45,
+            image: "Images/calf raises.png",
         },
         {
             name: "Mountain climbers",
             sets: 3,
             reps: 30,
             rest: 45,
+            image: "Images/mountain climbers.jpg",
         }
     ],
 
@@ -49,38 +52,42 @@ const workouts = {
             sets: 3,
             reps: 15,
             rest: 45,
-            /*image: "images/marching.jpg"*/
+            image: "Images/burpees.jpg",
         },
         {
             name: "Knee Push ups",
             sets: 3,
             reps: 15,
             rest: 45,
-            /*image: "images/side-raises.jpg"*/
+            image: "Images/knee push up.jpg",
         },
         {
             name: "Shoulder Taps",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/shoulder taps.jpg",
         },
         {
             name: "Tricep Dips",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/tricep dips.png",
         },
         {
             name: "Plank",
             sets: 3,
             hold: 60,
             rest: 45,
+            image: "Images/plank.png",
         },
         {
             name: "Plank jack",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/plank jack.jpg",
         }
     ],
 
@@ -90,37 +97,42 @@ const workouts = {
             sets: 3,
             reps: 50,
             rest: 45,
-            /*image: "images/lunges.jpg"*/
+            image: "Images/jumping jacks.jpg",
         },
         {
             name: "Burpees",
             sets: 3,
             reps: 25,
             rest: 45,
+            image: "Images/burpees.jpg",
         },
         {
             name: "Mountain Climbers",
             sets: 3,
             reps: 30,
             rest: 45,
+            image: "Images/mountain climbers.jpg",
         },
         {
             name: "Shoulder Taps",
             sets: 3,
             reps: 25,
             rest: 45,
+            image: "Images/shoulder taps.jpg",
         },
         {
             name: "Leg raises",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/leg raises.jpg",
         },
         {
             name: "Side planks",
             sets: 3,
             hold: 30,
             rest: 45,
+            image: "Images/side plank.jpg",
         }
     ],
 
@@ -130,19 +142,21 @@ const workouts = {
             sets: 3,
             reps: 50,
             rest: 45,
-            /*image: "images/bird-dogs.jpg"*/
+            image: "Images/high knees.png",
         },
         {
             name: "W Superman",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/w supermann.jpg",
         },
         {
             name: "Shoulder raises",
             sets: 3,
             reps: 30,
             rest: 45,
+            image: "Images/Shoulder Press.png",
         },
         {
             name: "Push up",
