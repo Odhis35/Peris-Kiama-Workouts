@@ -3,72 +3,204 @@ const workouts = {
 
     Monday: [
         {
-            name: "Bodyweight Squats",
+            name: "Invisible Jump rope",
             sets: 3,
-            reps: 12,
+            reps: 50,
             rest: 45,
-            image: "images/squats.jpg"
+            image: "Images/Invisibleropeskipping.jpg",
         },
         {
-            name: "Wall Push-ups",
+            name: "Bodyweight Squats",
+            sets: 3,
+            reps: 20,
+            rest: 45,
+        },
+        {
+            name: "Regular Lunges",
             sets: 3,
             reps: 10,
             rest: 45,
-            image: "images/wall-pushups.jpg"
+            /*image: "images/wall-pushups.jpg"*/
         },
         {
-            name: "Glute Bridges",
+            name: "Single-leg Deadlift",
             sets: 3,
             reps: 15,
             rest: 45,
-            image: "images/glute-bridges.jpg"
+            /*image: "images/glute-bridges.jpg"*/
+        },
+        {
+            name: "Calf-raise",
+            sets: 3,
+            reps: 20,
+            rest: 45,
+        },
+        {
+            name: "Mountain climbers",
+            sets: 3,
+            reps: 30,
+            rest: 45,
         }
     ],
 
     Tuesday: [
         {
-            name: "Marching in Place",
+            name: "Burpees",
             sets: 3,
-            reps: 40,
-            rest: 30,
-            image: "images/marching.jpg"
+            reps: 15,
+            rest: 45,
+            /*image: "images/marching.jpg"*/
         },
         {
-            name: "Standing Side Leg Raises",
+            name: "Knee Push ups",
             sets: 3,
-            reps: 12,
-            rest: 30,
-            image: "images/side-raises.jpg"
+            reps: 15,
+            rest: 45,
+            /*image: "images/side-raises.jpg"*/
+        },
+        {
+            name: "Shoulder Taps",
+            sets: 3,
+            reps: 15,
+            rest: 45,
+        },
+        {
+            name: "Tricep Dips",
+            sets: 3,
+            reps: 15,
+            rest: 45,
+        },
+        {
+            name: "Plank",
+            sets: 3,
+            hold: 60,
+            rest: 45,
+        },
+        {
+            name: "Plank jack",
+            sets: 3,
+            reps: 15,
+            rest: 45,
         }
     ],
 
     Wednesday: [
         {
-            name: "Reverse Lunges",
+            name: "Jumping Jacks",
             sets: 3,
-            reps: 10,
+            reps: 50,
             rest: 45,
-            image: "images/lunges.jpg"
+            /*image: "images/lunges.jpg"*/
+        },
+        {
+            name: "Burpees",
+            sets: 3,
+            reps: 25,
+            rest: 45,
+        },
+        {
+            name: "Mountain Climbers",
+            sets: 3,
+            reps: 30,
+            rest: 45,
+        },
+        {
+            name: "Shoulder Taps",
+            sets: 3,
+            reps: 25,
+            rest: 45,
+        },
+        {
+            name: "Leg raises",
+            sets: 3,
+            reps: 15,
+            rest: 45,
+        },
+        {
+            name: "Side planks",
+            sets: 3,
+            hold: 30,
+            rest: 45,
         }
     ],
 
     Thursday: [
         {
-            name: "Bird Dogs",
+            name: "High Knees",
             sets: 3,
-            reps: 12,
-            rest: 30,
-            image: "images/bird-dogs.jpg"
+            reps: 50,
+            rest: 45,
+            /*image: "images/bird-dogs.jpg"*/
+        },
+        {
+            name: "W Superman",
+            sets: 3,
+            reps: 15,
+            rest: 45,
+        },
+        {
+            name: "Shoulder raises",
+            sets: 3,
+            reps: 30,
+            rest: 45,
+        },
+        {
+            name: "Push up",
+            sets: 3,
+            reps: 15,
+            rest: 45,
+        },
+        {
+            name: "In-outs",
+            sets: 3,
+            reps: 15,
+            rest: 45,
+        },
+        {
+            name: "Bird-dog",
+            sets: 3,
+            reps: 15,
+            rest: 45,
         }
     ],
 
     Friday: [
         {
-            name: "Plank",
+            name: "Squat Jumps",
             sets: 3,
             reps: 30,
             rest: 45,
-            image: "images/plank.jpg"
+            /*image: "images/plank.jpg"*/
+        },
+        {
+            name: "Commandos",
+            sets: 3,
+            reps: 15,
+            rest: 45,
+        },
+        {
+            name: "Glute Bridges",
+            sets: 3,
+            reps: 20,
+            rest: 45,
+        },
+        {
+            name: "Donkey Kicks",
+            sets: 3,
+            reps: 15,
+            rest: 45,
+        },
+        {
+            name: "Reverse Lunges",
+            sets: 3,
+            reps: 15,
+            rest: 45,
+        },
+        {
+            name: "Side-lying leg raises",
+            sets: 3,
+            reps: 15,
+            rest: 45,
         }
     ]
 
@@ -102,7 +234,7 @@ function selectDay(day) {
             <h3>${exercise.name}</h3>
 
             <img src="${exercise.image}"
-                 alt="${exercise.name} demonstration">
+                alt="${exercise.name} demonstration">
 
             <p>Sets: ${exercise.sets}</p>
             <p>Reps: ${exercise.reps}</p>
@@ -181,17 +313,15 @@ function completeExercise(button) {
     }
 }
 
-
-
 let timerInterval;
 
-function startRest(seconds, button) {
+function startRest(seconds) {
 
     clearInterval(timerInterval);
 
     let remaining = seconds;
 
-    const timerDisplay = button.nextElementSibling;
+    const timerDisplay = document.getElementById("rest-timer");
 
     timerDisplay.textContent = `Rest: ${remaining}s`;
 
@@ -211,4 +341,5 @@ function startRest(seconds, button) {
 
     }, 1000);
 }
+
 
