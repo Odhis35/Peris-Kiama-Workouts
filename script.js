@@ -152,29 +152,32 @@ const workouts = {
             image: "Images/w supermann.jpg",
         },
         {
-            name: "Shoulder raises",
+            name: "Shoulder Press",
             sets: 3,
             reps: 30,
             rest: 45,
-            image: "Images/Shoulder Press.png",
+            image: "Images/Shoulder.png",
         },
         {
             name: "Push up",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/knee push up.jpg",
         },
         {
             name: "In-outs",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/in out.jpg",
         },
         {
             name: "Bird-dog",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/birddog.jpg",
         }
     ],
 
@@ -184,37 +187,42 @@ const workouts = {
             sets: 3,
             reps: 30,
             rest: 45,
-            /*image: "images/plank.jpg"*/
+            image: "Images/squat jump.jpg",
         },
         {
             name: "Commandos",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/commandos.jpg",
         },
         {
             name: "Glute Bridges",
             sets: 3,
             reps: 20,
             rest: 45,
+            image: "Images/glute bridge.jpg",
         },
         {
             name: "Donkey Kicks",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/donkey kicks.jpg",
         },
         {
             name: "Reverse Lunges",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/reverse lunges.jpg",
         },
         {
             name: "Side-lying leg raises",
             sets: 3,
             reps: 15,
             rest: 45,
+            image: "Images/side lying leg raises.jpg",
         }
     ]
 
