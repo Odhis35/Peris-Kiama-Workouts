@@ -335,6 +335,7 @@ function completeExercise(button) {
     }
 }
 
+
 let timerInterval;
 
 function startRest(seconds) {
@@ -363,5 +364,6 @@ function startRest(seconds) {
 
     }, 1000);
 }
+
 
 
